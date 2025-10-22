@@ -1,7 +1,7 @@
-// App.js - VERSÃO CORRETA COM NAVEGAÇÃO
+
 import { NavigationContainer } from '@react-navigation/native';
 import { createStackNavigator } from '@react-navigation/stack';
-import HomeScreen from './screens/homeScreen'; // ← 'H' maiúsculo no import
+import HomeScreen from './screens/homeScreen'; 
 import LevelsScreen from './screens/LevelsScreen';
 import QuizScreen from './screens/quizScreen';
 import PontuacaoScreen from './screens/pontuacaoScreen';

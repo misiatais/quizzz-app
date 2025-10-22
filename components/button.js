@@ -1,7 +1,7 @@
-// components/button.js
+
 import { TouchableOpacity, Text } from "react-native"
 
-export default function Mybutton({ title = "Aperte", onPress, color = "#FFD700" }){ // ← Mudei para amarelo
+export default function Mybutton({ title = "Aperte", onPress, color = "#FFD700" }){ 
     return (
       <TouchableOpacity 
         style={{ 
@@ -13,7 +13,7 @@ export default function Mybutton({ title = "Aperte", onPress, color = "#FFD700" 
         onPress={onPress}
       >
         <Text style={{ 
-          color: 'black', // ← Texto preto para contrastar com amarelo
+          color: 'black', 
           fontSize: 16,
           fontWeight: 'bold',
           textAlign: 'center' 

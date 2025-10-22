@@ -20,10 +20,10 @@ export default function LevelsScreen() {
         resizeMode="cover"
       />
       
-      {/* Overlay para conteúdo */}
+      
       <View style={styles.overlay}>
         <Text style={styles.title}>🐝 ESCOLHA O NÍVEL</Text>
-        <Text style={styles.subtitle}>Como você quer jogar?</Text>
+      
         
         <View style={styles.levelsContainer}>
           <View style={styles.levelCard}>
@@ -85,12 +85,6 @@ const styles = StyleSheet.create({
     marginBottom: 10,
     textAlign: 'center',
   },
-  subtitle: {
-    fontSize: 18,
-    color: 'white',
-    marginBottom: 40,
-    textAlign: 'center',
-  },
   levelsContainer: {
     flex: 1,
     justifyContent: 'space-around',
@@ -107,19 +101,19 @@ const styles = StyleSheet.create({
     elevation: 6,
   },
   levelIcon: {
-    fontSize: 12,
-    marginBottom: 7,
+    fontSize: 11,
+    marginBottom: 1,
   },
   levelTitle: {
     fontSize: 20,
     fontWeight: 'bold',
-    marginBottom: 5,
+    marginBottom: 2,
     color: '#333',
   },
   levelDesc: {
     fontSize: 14,
     color: '#666',
-    marginBottom: 15,
+    marginBottom: 2,
     textAlign: 'center',
   },
 });

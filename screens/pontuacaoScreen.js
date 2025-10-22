@@ -1,4 +1,4 @@
-// screens/PontuacaoScreen.js - VERSÃO SIMPLIFICADA
+
 import { View, Text, StyleSheet, TouchableOpacity, Image, ScrollView } from 'react-native';
 import { useNavigation } from '@react-navigation/native';
 
@@ -34,7 +34,7 @@ export default function PontuacaoScreen({ route }) {
         <ScrollView showsVerticalScrollIndicator={false}>
           <Text style={styles.title}>🐝 PONTUAÇÃO FINAL</Text>
           
-          {/* Card do resultado geral - APENAS ISSO */}
+         
           <View style={styles.resultCard}>
             <Text style={styles.emoji}>{getEmoji()}</Text>
             <Text style={styles.pontuacao}>
@@ -45,7 +45,7 @@ export default function PontuacaoScreen({ route }) {
             <Text style={styles.nivel}>Nível: {nivel}</Text>
           </View>
 
-          {/* Botões de ação */}
+         
           <View style={styles.botoesContainer}>
             <TouchableOpacity 
               style={styles.botao}
@@ -108,11 +108,11 @@ const styles = StyleSheet.create({
   },
   resultCard: {
     backgroundColor: 'rgba(248, 249, 225, 0.9)',
-    padding: 30, // Aumentei um pouco para destacar
+    padding: 30, 
     borderRadius: 18,
     alignItems: 'center',
-    marginBottom: 20, // Aumentei o espaço abaixo
-    marginTop: 20, // Adicionei espaço acima
+    marginBottom: 20, 
+    marginTop: 20,
   },
   emoji: {
     fontSize: 40,

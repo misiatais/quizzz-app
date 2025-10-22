@@ -1,4 +1,4 @@
-# 🐝 Quiz da Abelha | BuzzKnowledge
+# 🐝 Quiz da Abelha 
 
 <div align="center">
 
@@ -50,15 +50,6 @@
 
 </div>
 
-## 📸 **Capturas de Tela**
-
-<div align="center">
-
-| Tela Inicial | Seleção de Nível | Quiz | Resultados |
-|--------------|------------------|------|------------|
-| <img src="assets/screenshots/home.jpg" width="150"> | <img src="assets/screenshots/levels.jpg" width="150"> | <img src="assets/screenshots/quiz.jpg" width="150"> | <img src="assets/screenshots/results.jpg" width="150"> |
-
-</div>
 
 ## 🏃‍♂️ **Como Executar**
 
@@ -74,7 +65,7 @@
 git clone https://github.com/misiatais/quizzz-app.git
 
 # 2. Entre na pasta do projeto
-cd quiz-app
+cd quizzz-app
 
 # 3. Instale as dependências
 npm install

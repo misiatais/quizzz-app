@@ -1,4 +1,4 @@
-// screens/DetalhesScreen.js
+
 import { View, Text, StyleSheet, TouchableOpacity, Image, ScrollView } from 'react-native';
 import { useNavigation } from '@react-navigation/native';
 
@@ -6,7 +6,6 @@ export default function DetalhesScreen({ route }) {
   const navigation = useNavigation();
   const { respostasUsuario, nivel } = route.params;
 
-  // Separa respostas certas e erradas
   const respostasCertas = respostasUsuario.filter(r => r.acertou);
   const respostasErradas = respostasUsuario.filter(r => !r.acertou);
 
@@ -41,7 +40,7 @@ export default function DetalhesScreen({ route }) {
             </View>
           </View>
 
-          {/* Questões que ACERTOU */}
+         
           {respostasCertas.length > 0 && (
             <View style={styles.secaoCard}>
               <Text style={styles.secaoTitulo}>✅ Questões que Você Acertou</Text>
@@ -59,7 +58,7 @@ export default function DetalhesScreen({ route }) {
             </View>
           )}
 
-          {/* Questões que ERROU */}
+          
           {respostasErradas.length > 0 && (
             <View style={styles.secaoCard}>
               <Text style={styles.secaoTitulo}>❌ Questões que Você Errou</Text>

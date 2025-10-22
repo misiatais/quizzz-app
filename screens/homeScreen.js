@@ -1,4 +1,3 @@
-// screens/WelcomeScreen.js
 import { View, Text, StyleSheet, TouchableOpacity, Image } from 'react-native';
 import { useNavigation } from '@react-navigation/native';
 
@@ -13,7 +12,7 @@ export default function HomeScreen() {
         resizeMode="cover"
       />
       
-      {/* ADICIONE ESTE OVERLAY - é ele que faz o texto aparecer! */}
+     
       <View style={styles.overlay}>
         <Text style={styles.title}>🐝 QUIZZZ</Text>
         <Text style={styles.subtitle}>Desafie seus conhecimentos!</Text>
@@ -52,7 +51,7 @@ const styles = StyleSheet.create({
     justifyContent: 'center',
     alignItems: 'center',
     padding: 20,
-    backgroundColor: 'rgba(0, 0, 0, 0.6)', // ← Este fundo escuro faz o texto aparecer!
+    backgroundColor: 'rgba(0, 0, 0, 0.6)', 
   },
   title: {
     fontSize: 36,

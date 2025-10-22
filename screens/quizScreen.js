@@ -1,4 +1,4 @@
-// screens/quizScreen.js - VERSÃO CORRIGIDA
+
 import React, { useState } from 'react';
 import { View, Text, StyleSheet, TouchableOpacity, Image } from 'react-native';
 import { useNavigation } from '@react-navigation/native';
@@ -17,10 +17,9 @@ export default function QuizScreen({ route }) {
     const perguntaAtualObj = perguntasDoNivel[perguntaAtual];
     const acertou = opcaoSelecionada === perguntaAtualObj.respostaCorreta;
 
-    // Calcula a NOVA pontuação ANTES de atualizar o estado
     const novaPontuacao = acertou ? pontuacao + 1 : pontuacao;
     
-    // Cria o array de respostas atualizado
+    
     const novasRespostas = [...respostasUsuario, {
       pergunta: perguntaAtualObj.pergunta,
       respostaUsuario: opcaoSelecionada,
@@ -29,7 +28,7 @@ export default function QuizScreen({ route }) {
       opcoes: perguntaAtualObj.opcoes
     }];
 
-    // Atualiza os estados
+   
     if (acertou) {
       setPontuacao(novaPontuacao);
     }
@@ -38,9 +37,9 @@ export default function QuizScreen({ route }) {
     if (perguntaAtual + 1 < perguntasDoNivel.length) {
       setPerguntaAtual(perguntaAtual + 1);
     } else {
-      // Usa a NOVA pontuação calculada (não a do estado antigo)
+      
       navigation.navigate('Pontuacao', {
-        pontuacao: novaPontuacao, // ← CORRIGIDO: usa novaPontuacao
+        pontuacao: novaPontuacao, 
         totalPerguntas: perguntasDoNivel.length,
         nivel: nivel,
         respostasUsuario: novasRespostas
@@ -92,7 +91,6 @@ export default function QuizScreen({ route }) {
   );
 }
 
-// Styles continuam os mesmos...
 const styles = StyleSheet.create({
   container: {
     flex: 1,
@@ -113,10 +111,10 @@ const styles = StyleSheet.create({
     color: '#FFD700',
     textAlign: 'center',
     marginTop: 40,
-    marginBottom: 20,
+    marginBottom: 2,
   },
   progressoContainer: {
-    marginBottom: 30,
+    marginBottom: 20,
   },
   contador: {
     fontSize: 16,
